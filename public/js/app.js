@@ -70,7 +70,9 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.section').forEach((sec) => {
-  revealObserver.observe(sec);
+  sec.classList.add('visible');
+  sec.style.opacity = '1';
+  sec.style.transform = 'none';
 });
 
 /* ── CONSTITUENCY DATA (2024 Lok Sabha) ──────────────── */

@@ -22,7 +22,7 @@ const HISTORY_DATA = [
 function renderHistorySection() {
   const container = document.getElementById('history-container');
   if (!container) return;
-  
+
   const timelineHtml = HISTORY_DATA.map((h) => {
     return `
       <div class="timeline-item">
