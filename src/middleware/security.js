@@ -38,8 +38,7 @@ function securityMiddleware() {
 
           connectSrc: [
             "'self'",
-            "https:",
-            "http://localhost:8080"
+            "https:"
           ],
 
           workerSrc: ["'self'", "blob:"],
