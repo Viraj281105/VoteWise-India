@@ -9,8 +9,9 @@
   <meta name="theme-color" content="#FF9933" />
   <title>VoteWise India — Understand Your Vote. Shape Your Future.</title>
 
-  <!-- PWA Manifest & iOS Meta -->
+  <!-- PWA Manifest & Meta -->
   <link rel="manifest" href="/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="VoteWise India" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -66,7 +67,7 @@
   <main id="main" role="main">
 
     <!-- ═══ 1. HERO SECTION ═══ -->
-    <section id="hero" class="hero-section" role="region" aria-label="Welcome to VoteWise India">
+    <section id="hero" class="hero-section light-section" role="region" aria-label="Welcome to VoteWise India">
       <div class="hero-tricolour-bg" aria-hidden="true"></div>
       <div class="hero-content">
         <div class="hero-ashoka-chakra" aria-hidden="true">
@@ -80,9 +81,10 @@
             </g>
           </svg>
         </div>
-        <h1 class="hero-headline" data-translate="hero-headline">Understand Your Vote.<br />Shape Your Future.</h1>
-        <p class="hero-subheading" data-translate="hero-subheading">A complete guide to the Indian election process —
-          interactive, multilingual, and built for every citizen.</p>
+        <h1 class="hero-headline" data-translate="hero-headline">Empowering Every Indian.<br />Mastering Democracy.</h1>
+        <p class="hero-subheading" data-translate="hero-subheading">Your essential guide to the Indian election process
+          —
+          interactive, multilingual, and AI-powered for the next generation of voters.</p>
         <div class="hero-cta-group">
           <a href="#timeline" class="btn btn-primary" id="btn-start-learning">Start Learning →</a>
           <a href="#quiz" class="btn btn-secondary" id="btn-take-quiz">Take the Quiz →</a>
@@ -96,7 +98,7 @@
     </section>
 
     <!-- ═══ 2. INTERACTIVE ELECTION TIMELINE ═══ -->
-    <section id="timeline" class="section timeline-section" role="region" aria-label="Election process timeline">
+    <section id="timeline" class="section timeline-section light-section" role="region" aria-label="Election process timeline">
       <div class="container">
         <h2 class="section-title" data-translate="timeline-title">The Election Journey</h2>
         <p class="section-subtitle" data-translate="timeline-subtitle">Follow the 8 steps from announcement to
@@ -112,7 +114,7 @@
     </section>
 
     <!-- ═══ 2.5 DEEP DIVE (EVM & VVPAT) ═══ -->
-    <section id="deepdive" class="section deepdive-section" role="region" aria-label="How Your Vote Is Counted">
+    <section id="deepdive" class="section deepdive-section dark-section" role="region" aria-label="How Your Vote Is Counted">
       <div class="container">
         <h2 class="section-title" data-translate="deepdive-title">How Your Vote Is Counted</h2>
         <p class="section-subtitle" data-translate="deepdive-subtitle">Understanding the EVM and VVPAT process</p>
@@ -142,7 +144,7 @@
     </section>
 
     <!-- ═══ 3. CONSTITUENCY EXPLORER ═══ -->
-    <section id="constituency" class="section constituency-section" role="region" aria-label="Constituency explorer">
+    <section id="constituency" class="section constituency-section light-section" role="region" aria-label="Constituency explorer">
       <div class="container">
         <h2 class="section-title" data-translate="constituency-title">Constituency Explorer</h2>
         <p class="section-subtitle" data-translate="constituency-subtitle">Discover your constituency's election data
@@ -168,7 +170,7 @@
     </section>
 
     <!-- ═══ 3.5 INTERACTIVE ELECTION MAP ═══ -->
-    <section id="map" class="section map-section" role="region" aria-label="India 2024 election results map">
+    <section id="map" class="section map-section light-section" role="region" aria-label="India 2024 election results map">
       <div class="container">
         <h2 class="section-title">2024 Election Results Map</h2>
         <p class="section-subtitle">Click any state to explore constituency-level results</p>
@@ -179,7 +181,7 @@
     </section>
 
     <!-- ═══ 4. INTERACTIVE QUIZ ═══ -->
-    <section id="quiz" class="section quiz-section" role="region" aria-label="Election knowledge quiz">
+    <section id="quiz" class="section quiz-section dark-section" role="region" aria-label="Election knowledge quiz">
       <div class="container">
         <h2 class="section-title" data-translate="quiz-title">Test Your Knowledge</h2>
         <p class="section-subtitle" data-translate="quiz-subtitle">20 questions across 4 difficulty levels — how well do
@@ -232,7 +234,7 @@
     </section>
 
     <!-- ═══ 5. AI ELECTION ASSISTANT (GEMINI CHATBOT) ═══ -->
-    <section id="chatbot" class="section chatbot-section" role="region"
+    <section id="chatbot" class="section chatbot-section light-section" role="region"
       aria-label="AI election assistant powered by Gemini">
       <div class="container">
         <h2 class="section-title" data-translate="chat-title">Ask VoteWise AI</h2>
@@ -275,7 +277,7 @@
     </section>
 
     <!-- ═══ 6. KNOW YOUR RIGHTS ═══ -->
-    <section id="rights" class="section rights-section" role="region" aria-label="Know your voting rights">
+    <section id="rights" class="section rights-section light-section" role="region" aria-label="Know your voting rights">
       <div class="container">
         <h2 class="section-title" data-translate="rights-title">Know Your Rights</h2>
         <p class="section-subtitle" data-translate="rights-subtitle">Every Indian citizen's electoral rights, explained
@@ -287,7 +289,7 @@
     </section>
 
     <!-- ═══ 8. MYTH BUSTERS ═══ -->
-    <section id="myths" class="section myths-section" role="region" aria-label="Election myth busters">
+    <section id="myths" class="section myths-section light-section" role="region" aria-label="Election myth busters">
       <div class="container">
         <h2 class="section-title" data-translate="myths-title">Myth Busters</h2>
         <p class="section-subtitle" data-translate="myths-subtitle">Separating fact from fiction about Indian elections
@@ -299,11 +301,10 @@
     </section>
 
     <!-- ═══ 9. HISTORY OF INDIAN ELECTIONS ═══ -->
-    <section id="history" class="section history-section" role="region" aria-label="History of Indian Elections">
+    <section id="history" class="section history-section dark-section" role="region" aria-label="History of Indian Elections">
       <div class="container">
-        <h2 class="section-title" data-translate="history-title" style="color:white;">History of Indian Elections</h2>
-        <p class="section-subtitle" data-translate="history-subtitle" style="color:#ccc;">Journey through India's
-          democratic milestones</p>
+        <h2 class="section-title" data-translate="history-title">History of Indian Elections</h2>
+        <p class="section-subtitle" data-translate="history-subtitle">Journey through India's democratic milestones</p>
 
         <div class="history-container" id="history-container">
           <!-- History items injected by history.js -->
@@ -314,7 +315,7 @@
   </main>
 
   <!-- ═══ 8. FOOTER ═══ -->
-  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <footer class="site-footer light-section" role="contentinfo" aria-label="Site footer">
     <div class="container footer-content">
       <div class="footer-links">
         <a href="https://eci.gov.in" target="_blank" rel="noopener noreferrer">ECI Official Site</a>
@@ -333,13 +334,11 @@
   </footer>
 
   <!-- DOMPurify for chat sanitization -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"
-    integrity="sha384-irPFIqx2u/VB2giXJuIOhmhnTaK/UOSTiBXM8rc3LUIEBVU6IHbqgio3eOHWJxGl" crossorigin="anonymous"
-    defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" defer></script>
 
   <!-- Application Scripts -->
   <script src="js/app.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" defer></script>
+  <script src="/js/vendor/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" defer></script>
   <script src="js/map.js" defer></script>
   <script src="js/timeline.js" defer></script>
@@ -349,17 +348,6 @@
   <script src="js/chatbot.js" defer></script>
   <script src="js/translate.js" defer></script>
   <script src="js/tts.js" defer></script>
-
-  <!-- PWA Service Worker Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(r => console.log('[SW] Registered:', r.scope))
-          .catch(e => console.warn('[SW] Registration failed:', e));
-      });
-    }
-  </script>
 </body>
 
 </html>

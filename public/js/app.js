@@ -61,7 +61,7 @@ const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
+        entry.target.classList.add('visible');
         revealObserver.unobserve(entry.target);
       }
     });
@@ -2271,4 +2271,28 @@ function escapeHTML(str) {
 document.addEventListener('DOMContentLoaded', () => {
   renderRightsSection();
   renderMythsSection();
+});
+
+// Register PWA Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(r => console.log('[SW] Registered:', r.scope))
+      .catch(e => console.warn('[SW] Registration failed:', e));
+  });
+}
+
+// Reveal sections on scroll
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    regs.forEach(r => r.unregister());
+  });
+}
+
+// PWA Install Prompt handling
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  console.log('[PWA] Install prompt deferred');
 });

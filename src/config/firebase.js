@@ -19,8 +19,13 @@ function initializeFirebase() {
       const projectId = process.env.FIREBASE_PROJECT_ID;
       const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
       const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
+
       if (!projectId || !privateKey || !clientEmail) {
-        console.warn('[Firebase] Credentials not configured — running in mock mode.');
+        if (process.env.NODE_ENV === 'production') {
+          console.error('[Firebase] CRITICAL: Environment variables missing in production!');
+        } else {
+          console.warn('[Firebase] Credentials not configured — running in mock mode.');
+        }
         return { db: null, auth: null };
       }
       admin.initializeApp({ credential: admin.credential.cert({ projectId, privateKey, clientEmail }) });

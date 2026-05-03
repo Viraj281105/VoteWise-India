@@ -31,21 +31,24 @@ self.addEventListener('activate', e => {
   );
 });
 
-self.addEventListener('fetch', e => {
-  const url = new URL(e.request.url);
-  // Network-first for API calls
-  if (url.pathname.startsWith('/api/')) {
-    e.respondWith(
-      fetch(e.request).catch(() =>
-        new Response(JSON.stringify({ error: 'Offline' }), {
-          headers: { 'Content-Type': 'application/json' }
-        })
-      )
-    );
+self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  // 🚫 DO NOT INTERCEPT THESE (CRITICAL FIX)
+  if (
+    url.pathname.startsWith('/api') ||
+    url.pathname.startsWith('/data') ||
+    url.pathname.endsWith('.json') ||
+    url.pathname === '/manifest.json' ||
+    url.pathname === '/favicon.ico'
+  ) {
     return;
   }
-  // Cache-first for static assets
-  e.respondWith(
-    caches.match(e.request).then(cached => cached || fetch(e.request))
+
+  // Cache-first strategy for UI assets
+  event.respondWith(
+    caches.match(event.request).then(cached => {
+      return cached || fetch(event.request);
+    })
   );
 });

@@ -1,0 +1,2896 @@
+{
+  "Uttar Pradesh": [
+    {
+      "name": "Varanasi",
+      "mp": "Narendra Modi",
+      "party": "BJP",
+      "voteShare": 54.2,
+      "turnout": 56.4,
+      "category": "General"
+    },
+    {
+      "name": "Rae Bareli",
+      "mp": "Rahul Gandhi",
+      "party": "INC",
+      "voteShare": 66.2,
+      "turnout": 58.1,
+      "category": "General"
+    },
+    {
+      "name": "Lucknow",
+      "mp": "Rajnath Singh",
+      "party": "BJP",
+      "voteShare": 53.5,
+      "turnout": 52.2,
+      "category": "General"
+    },
+    {
+      "name": "Amethi",
+      "mp": "Kishori Lal",
+      "party": "INC",
+      "voteShare": 54.9,
+      "turnout": 54.3,
+      "category": "General"
+    },
+    {
+      "name": "Faizabad",
+      "mp": "Awadhesh Prasad",
+      "party": "SP",
+      "voteShare": 48.6,
+      "turnout": 59.1,
+      "category": "SC"
+    }
+  ],
+  "Maharashtra": [
+    {
+      "name": "Nagpur",
+      "mp": "Nitin Gadkari",
+      "party": "BJP",
+      "voteShare": 54.1,
+      "turnout": 54.3,
+      "category": "General"
+    },
+    {
+      "name": "Baramati",
+      "mp": "Supriya Sule",
+      "party": "NCP (SP)",
+      "voteShare": 51.3,
+      "turnout": 59.5,
+      "category": "General"
+    },
+    {
+      "name": "Mumbai North",
+      "mp": "Piyush Goyal",
+      "party": "BJP",
+      "voteShare": 65.7,
+      "turnout": 57.0,
+      "category": "General"
+    },
+    {
+      "name": "Nanded",
+      "mp": "Vasantrao Chavan",
+      "party": "INC",
+      "voteShare": 46.8,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Nashik",
+      "mp": "Rajabhau Waje",
+      "party": "SHS (UBT)",
+      "voteShare": 48.4,
+      "turnout": 60.7,
+      "category": "General"
+    }
+  ],
+  "West Bengal": [
+    {
+      "name": "Diamond Harbour",
+      "mp": "Abhishek Banerjee",
+      "party": "TMC",
+      "voteShare": 55.6,
+      "turnout": 81.2,
+      "category": "General"
+    },
+    {
+      "name": "Asansol",
+      "mp": "Shatrughan Sinha",
+      "party": "TMC",
+      "voteShare": 46.5,
+      "turnout": 73.3,
+      "category": "General"
+    },
+    {
+      "name": "Darjeeling",
+      "mp": "Raju Bista",
+      "party": "BJP",
+      "voteShare": 51.2,
+      "turnout": 74.8,
+      "category": "General"
+    },
+    {
+      "name": "Baharampur",
+      "mp": "Yusuf Pathan",
+      "party": "TMC",
+      "voteShare": 47.8,
+      "turnout": 80.1,
+      "category": "General"
+    },
+    {
+      "name": "Krishnanagar",
+      "mp": "Mahua Moitra",
+      "party": "TMC",
+      "voteShare": 44.1,
+      "turnout": 80.6,
+      "category": "General"
+    }
+  ],
+  "Tamil Nadu": [
+    {
+      "name": "Chennai South",
+      "mp": "Thamizhachi Thangapandian",
+      "party": "DMK",
+      "voteShare": 47.0,
+      "turnout": 54.3,
+      "category": "General"
+    },
+    {
+      "name": "Coimbatore",
+      "mp": "Ganapathi P. Rajkumar",
+      "party": "DMK",
+      "voteShare": 44.5,
+      "turnout": 64.8,
+      "category": "General"
+    },
+    {
+      "name": "Thoothukudi",
+      "mp": "Kanimozhi Karunanidhi",
+      "party": "DMK",
+      "voteShare": 55.3,
+      "turnout": 59.9,
+      "category": "General"
+    },
+    {
+      "name": "Sivaganga",
+      "mp": "Karti P. Chidambaram",
+      "party": "INC",
+      "voteShare": 51.2,
+      "turnout": 64.3,
+      "category": "General"
+    },
+    {
+      "name": "Madurai",
+      "mp": "Su. Venkatesan",
+      "party": "CPI(M)",
+      "voteShare": 43.6,
+      "turnout": 62.0,
+      "category": "General"
+    }
+  ],
+  "Bihar": [
+    {
+      "name": "Bihar Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Bihar Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Bihar Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Bihar Constituency 22",
+      "mp": "Candidate 22",
+      "party": "BJP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 23",
+      "mp": "Candidate 23",
+      "party": "BJP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 25",
+      "mp": "Candidate 25",
+      "party": "BJP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 26",
+      "mp": "Candidate 26",
+      "party": "BJP",
+      "voteShare": 48.4,
+      "turnout": 64.4,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 27",
+      "mp": "Candidate 27",
+      "party": "INC",
+      "voteShare": 48.5,
+      "turnout": 64.6,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 28",
+      "mp": "Candidate 28",
+      "party": "BJP",
+      "voteShare": 48.6,
+      "turnout": 64.8,
+      "category": "SC"
+    },
+    {
+      "name": "Bihar Constituency 29",
+      "mp": "Candidate 29",
+      "party": "BJP",
+      "voteShare": 48.8,
+      "turnout": 64.9,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 30",
+      "mp": "Candidate 30",
+      "party": "INC",
+      "voteShare": 48.9,
+      "turnout": 65.1,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 31",
+      "mp": "Candidate 31",
+      "party": "BJP",
+      "voteShare": 49.0,
+      "turnout": 65.3,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 32",
+      "mp": "Candidate 32",
+      "party": "BJP",
+      "voteShare": 49.2,
+      "turnout": 65.4,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 33",
+      "mp": "Candidate 33",
+      "party": "INC",
+      "voteShare": 49.3,
+      "turnout": 65.6,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 34",
+      "mp": "Candidate 34",
+      "party": "BJP",
+      "voteShare": 49.4,
+      "turnout": 65.8,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 35",
+      "mp": "Candidate 35",
+      "party": "BJP",
+      "voteShare": 49.5,
+      "turnout": 66.0,
+      "category": "SC"
+    },
+    {
+      "name": "Bihar Constituency 36",
+      "mp": "Candidate 36",
+      "party": "INC",
+      "voteShare": 49.7,
+      "turnout": 66.1,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 37",
+      "mp": "Candidate 37",
+      "party": "BJP",
+      "voteShare": 49.8,
+      "turnout": 66.3,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 38",
+      "mp": "Candidate 38",
+      "party": "BJP",
+      "voteShare": 49.9,
+      "turnout": 66.5,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 39",
+      "mp": "Candidate 39",
+      "party": "INC",
+      "voteShare": 50.1,
+      "turnout": 66.6,
+      "category": "General"
+    },
+    {
+      "name": "Bihar Constituency 40",
+      "mp": "Candidate 40",
+      "party": "BJP",
+      "voteShare": 50.2,
+      "turnout": 66.8,
+      "category": "General"
+    }
+  ],
+  "Karnataka": [
+    {
+      "name": "Karnataka Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Karnataka Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Karnataka Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Karnataka Constituency 22",
+      "mp": "Candidate 22",
+      "party": "BJP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 23",
+      "mp": "Candidate 23",
+      "party": "BJP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 25",
+      "mp": "Candidate 25",
+      "party": "BJP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 26",
+      "mp": "Candidate 26",
+      "party": "BJP",
+      "voteShare": 48.4,
+      "turnout": 64.4,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 27",
+      "mp": "Candidate 27",
+      "party": "INC",
+      "voteShare": 48.5,
+      "turnout": 64.6,
+      "category": "General"
+    },
+    {
+      "name": "Karnataka Constituency 28",
+      "mp": "Candidate 28",
+      "party": "BJP",
+      "voteShare": 48.6,
+      "turnout": 64.8,
+      "category": "SC"
+    }
+  ],
+  "Gujarat": [
+    {
+      "name": "Gujarat Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Gujarat Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Gujarat Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Gujarat Constituency 22",
+      "mp": "Candidate 22",
+      "party": "BJP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 23",
+      "mp": "Candidate 23",
+      "party": "BJP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 25",
+      "mp": "Candidate 25",
+      "party": "BJP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    },
+    {
+      "name": "Gujarat Constituency 26",
+      "mp": "Candidate 26",
+      "party": "BJP",
+      "voteShare": 48.4,
+      "turnout": 64.4,
+      "category": "General"
+    }
+  ],
+  "Rajasthan": [
+    {
+      "name": "Rajasthan Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Rajasthan Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Rajasthan Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Rajasthan Constituency 22",
+      "mp": "Candidate 22",
+      "party": "BJP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 23",
+      "mp": "Candidate 23",
+      "party": "BJP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Rajasthan Constituency 25",
+      "mp": "Candidate 25",
+      "party": "BJP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    }
+  ],
+  "Andhra Pradesh": [
+    {
+      "name": "Andhra Pradesh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "TDP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 2",
+      "mp": "Candidate 2",
+      "party": "TDP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 4",
+      "mp": "Candidate 4",
+      "party": "TDP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 5",
+      "mp": "Candidate 5",
+      "party": "TDP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 7",
+      "mp": "Candidate 7",
+      "party": "TDP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 8",
+      "mp": "Candidate 8",
+      "party": "TDP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 10",
+      "mp": "Candidate 10",
+      "party": "TDP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 11",
+      "mp": "Candidate 11",
+      "party": "TDP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 13",
+      "mp": "Candidate 13",
+      "party": "TDP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 14",
+      "mp": "Candidate 14",
+      "party": "TDP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 16",
+      "mp": "Candidate 16",
+      "party": "TDP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 17",
+      "mp": "Candidate 17",
+      "party": "TDP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 19",
+      "mp": "Candidate 19",
+      "party": "TDP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 20",
+      "mp": "Candidate 20",
+      "party": "TDP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 22",
+      "mp": "Candidate 22",
+      "party": "TDP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 23",
+      "mp": "Candidate 23",
+      "party": "TDP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Andhra Pradesh Constituency 25",
+      "mp": "Candidate 25",
+      "party": "TDP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    }
+  ],
+  "Madhya Pradesh": [
+    {
+      "name": "Madhya Pradesh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 22",
+      "mp": "Candidate 22",
+      "party": "BJP",
+      "voteShare": 47.9,
+      "turnout": 63.7,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 23",
+      "mp": "Candidate 23",
+      "party": "BJP",
+      "voteShare": 48.0,
+      "turnout": 63.9,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 24",
+      "mp": "Candidate 24",
+      "party": "INC",
+      "voteShare": 48.1,
+      "turnout": 64.1,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 25",
+      "mp": "Candidate 25",
+      "party": "BJP",
+      "voteShare": 48.2,
+      "turnout": 64.2,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 26",
+      "mp": "Candidate 26",
+      "party": "BJP",
+      "voteShare": 48.4,
+      "turnout": 64.4,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 27",
+      "mp": "Candidate 27",
+      "party": "INC",
+      "voteShare": 48.5,
+      "turnout": 64.6,
+      "category": "General"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 28",
+      "mp": "Candidate 28",
+      "party": "BJP",
+      "voteShare": 48.6,
+      "turnout": 64.8,
+      "category": "SC"
+    },
+    {
+      "name": "Madhya Pradesh Constituency 29",
+      "mp": "Candidate 29",
+      "party": "BJP",
+      "voteShare": 48.8,
+      "turnout": 64.9,
+      "category": "General"
+    }
+  ],
+  "Odisha": [
+    {
+      "name": "Odisha Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Odisha Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Odisha Constituency 15",
+      "mp": "Candidate 15",
+      "party": "INC",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 16",
+      "mp": "Candidate 16",
+      "party": "BJP",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 17",
+      "mp": "Candidate 17",
+      "party": "BJP",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 18",
+      "mp": "Candidate 18",
+      "party": "INC",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 19",
+      "mp": "Candidate 19",
+      "party": "BJP",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 20",
+      "mp": "Candidate 20",
+      "party": "BJP",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    },
+    {
+      "name": "Odisha Constituency 21",
+      "mp": "Candidate 21",
+      "party": "INC",
+      "voteShare": 47.7,
+      "turnout": 63.6,
+      "category": "SC"
+    }
+  ],
+  "Kerala": [
+    {
+      "name": "Kerala Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 2",
+      "mp": "Candidate 2",
+      "party": "INC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 3",
+      "mp": "Candidate 3",
+      "party": "BJP",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 4",
+      "mp": "Candidate 4",
+      "party": "INC",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 5",
+      "mp": "Candidate 5",
+      "party": "INC",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 6",
+      "mp": "Candidate 6",
+      "party": "BJP",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 7",
+      "mp": "Candidate 7",
+      "party": "INC",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Kerala Constituency 8",
+      "mp": "Candidate 8",
+      "party": "INC",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 9",
+      "mp": "Candidate 9",
+      "party": "BJP",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 10",
+      "mp": "Candidate 10",
+      "party": "INC",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 11",
+      "mp": "Candidate 11",
+      "party": "INC",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 12",
+      "mp": "Candidate 12",
+      "party": "BJP",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 13",
+      "mp": "Candidate 13",
+      "party": "INC",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 14",
+      "mp": "Candidate 14",
+      "party": "INC",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Kerala Constituency 15",
+      "mp": "Candidate 15",
+      "party": "BJP",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 16",
+      "mp": "Candidate 16",
+      "party": "INC",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 17",
+      "mp": "Candidate 17",
+      "party": "INC",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 18",
+      "mp": "Candidate 18",
+      "party": "BJP",
+      "voteShare": 47.3,
+      "turnout": 63.1,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 19",
+      "mp": "Candidate 19",
+      "party": "INC",
+      "voteShare": 47.5,
+      "turnout": 63.2,
+      "category": "General"
+    },
+    {
+      "name": "Kerala Constituency 20",
+      "mp": "Candidate 20",
+      "party": "INC",
+      "voteShare": 47.6,
+      "turnout": 63.4,
+      "category": "General"
+    }
+  ],
+  "Telangana": [
+    {
+      "name": "Telangana Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 2",
+      "mp": "Candidate 2",
+      "party": "INC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 3",
+      "mp": "Candidate 3",
+      "party": "BJP",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 4",
+      "mp": "Candidate 4",
+      "party": "INC",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 5",
+      "mp": "Candidate 5",
+      "party": "INC",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 6",
+      "mp": "Candidate 6",
+      "party": "BJP",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 7",
+      "mp": "Candidate 7",
+      "party": "INC",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Telangana Constituency 8",
+      "mp": "Candidate 8",
+      "party": "INC",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 9",
+      "mp": "Candidate 9",
+      "party": "BJP",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 10",
+      "mp": "Candidate 10",
+      "party": "INC",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 11",
+      "mp": "Candidate 11",
+      "party": "INC",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 12",
+      "mp": "Candidate 12",
+      "party": "BJP",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 13",
+      "mp": "Candidate 13",
+      "party": "INC",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 14",
+      "mp": "Candidate 14",
+      "party": "INC",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    },
+    {
+      "name": "Telangana Constituency 15",
+      "mp": "Candidate 15",
+      "party": "BJP",
+      "voteShare": 47.0,
+      "turnout": 62.5,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 16",
+      "mp": "Candidate 16",
+      "party": "INC",
+      "voteShare": 47.1,
+      "turnout": 62.7,
+      "category": "General"
+    },
+    {
+      "name": "Telangana Constituency 17",
+      "mp": "Candidate 17",
+      "party": "INC",
+      "voteShare": 47.2,
+      "turnout": 62.9,
+      "category": "General"
+    }
+  ],
+  "Assam": [
+    {
+      "name": "Assam Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Assam Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Assam Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    }
+  ],
+  "Jharkhand": [
+    {
+      "name": "Jharkhand Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Jharkhand Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 12",
+      "mp": "Candidate 12",
+      "party": "INC",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 13",
+      "mp": "Candidate 13",
+      "party": "BJP",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    },
+    {
+      "name": "Jharkhand Constituency 14",
+      "mp": "Candidate 14",
+      "party": "BJP",
+      "voteShare": 46.8,
+      "turnout": 62.4,
+      "category": "SC"
+    }
+  ],
+  "Punjab": [
+    {
+      "name": "Punjab Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 2",
+      "mp": "Candidate 2",
+      "party": "INC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 3",
+      "mp": "Candidate 3",
+      "party": "BJP",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 4",
+      "mp": "Candidate 4",
+      "party": "INC",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 5",
+      "mp": "Candidate 5",
+      "party": "INC",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 6",
+      "mp": "Candidate 6",
+      "party": "BJP",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 7",
+      "mp": "Candidate 7",
+      "party": "INC",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Punjab Constituency 8",
+      "mp": "Candidate 8",
+      "party": "INC",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 9",
+      "mp": "Candidate 9",
+      "party": "BJP",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 10",
+      "mp": "Candidate 10",
+      "party": "INC",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 11",
+      "mp": "Candidate 11",
+      "party": "INC",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 12",
+      "mp": "Candidate 12",
+      "party": "BJP",
+      "voteShare": 46.6,
+      "turnout": 62.0,
+      "category": "General"
+    },
+    {
+      "name": "Punjab Constituency 13",
+      "mp": "Candidate 13",
+      "party": "INC",
+      "voteShare": 46.7,
+      "turnout": 62.2,
+      "category": "General"
+    }
+  ],
+  "Chhattisgarh": [
+    {
+      "name": "Chhattisgarh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Chhattisgarh Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    },
+    {
+      "name": "Chhattisgarh Constituency 11",
+      "mp": "Candidate 11",
+      "party": "BJP",
+      "voteShare": 46.4,
+      "turnout": 61.9,
+      "category": "General"
+    }
+  ],
+  "Haryana": [
+    {
+      "name": "Haryana Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    },
+    {
+      "name": "Haryana Constituency 8",
+      "mp": "Candidate 8",
+      "party": "BJP",
+      "voteShare": 46.0,
+      "turnout": 61.4,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 9",
+      "mp": "Candidate 9",
+      "party": "INC",
+      "voteShare": 46.2,
+      "turnout": 61.5,
+      "category": "General"
+    },
+    {
+      "name": "Haryana Constituency 10",
+      "mp": "Candidate 10",
+      "party": "BJP",
+      "voteShare": 46.3,
+      "turnout": 61.7,
+      "category": "General"
+    }
+  ],
+  "Delhi": [
+    {
+      "name": "Delhi Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 6",
+      "mp": "Candidate 6",
+      "party": "INC",
+      "voteShare": 45.8,
+      "turnout": 61.0,
+      "category": "General"
+    },
+    {
+      "name": "Delhi Constituency 7",
+      "mp": "Candidate 7",
+      "party": "BJP",
+      "voteShare": 45.9,
+      "turnout": 61.2,
+      "category": "SC"
+    }
+  ],
+  "Uttarakhand": [
+    {
+      "name": "Uttarakhand Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Uttarakhand Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Uttarakhand Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Uttarakhand Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Uttarakhand Constituency 5",
+      "mp": "Candidate 5",
+      "party": "BJP",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    }
+  ],
+  "Jammu & Kashmir": [
+    {
+      "name": "Jammu & Kashmir Constituency 1",
+      "mp": "Candidate 1",
+      "party": "JKNC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Jammu & Kashmir Constituency 2",
+      "mp": "Candidate 2",
+      "party": "JKNC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Jammu & Kashmir Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Jammu & Kashmir Constituency 4",
+      "mp": "Candidate 4",
+      "party": "JKNC",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    },
+    {
+      "name": "Jammu & Kashmir Constituency 5",
+      "mp": "Candidate 5",
+      "party": "JKNC",
+      "voteShare": 45.6,
+      "turnout": 60.9,
+      "category": "General"
+    }
+  ],
+  "Himachal Pradesh": [
+    {
+      "name": "Himachal Pradesh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Himachal Pradesh Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    },
+    {
+      "name": "Himachal Pradesh Constituency 3",
+      "mp": "Candidate 3",
+      "party": "INC",
+      "voteShare": 45.4,
+      "turnout": 60.5,
+      "category": "General"
+    },
+    {
+      "name": "Himachal Pradesh Constituency 4",
+      "mp": "Candidate 4",
+      "party": "BJP",
+      "voteShare": 45.5,
+      "turnout": 60.7,
+      "category": "General"
+    }
+  ],
+  "Tripura": [
+    {
+      "name": "Tripura Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Tripura Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ],
+  "Arunachal Pradesh": [
+    {
+      "name": "Arunachal Pradesh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Arunachal Pradesh Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ],
+  "Goa": [
+    {
+      "name": "Goa Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Goa Constituency 2",
+      "mp": "Candidate 2",
+      "party": "INC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ],
+  "Manipur": [
+    {
+      "name": "Manipur Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Manipur Constituency 2",
+      "mp": "Candidate 2",
+      "party": "INC",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ],
+  "Meghalaya": [
+    {
+      "name": "Meghalaya Constituency 1",
+      "mp": "Candidate 1",
+      "party": "VPP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Meghalaya Constituency 2",
+      "mp": "Candidate 2",
+      "party": "VPP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ],
+  "Nagaland": [
+    {
+      "name": "Nagaland Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Sikkim": [
+    {
+      "name": "Sikkim Constituency 1",
+      "mp": "Candidate 1",
+      "party": "SKM",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Mizoram": [
+    {
+      "name": "Mizoram Constituency 1",
+      "mp": "Candidate 1",
+      "party": "ZPM",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Chandigarh": [
+    {
+      "name": "Chandigarh Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Andaman & Nicobar Islands": [
+    {
+      "name": "Andaman & Nicobar Islands Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Lakshadweep": [
+    {
+      "name": "Lakshadweep Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Puducherry": [
+    {
+      "name": "Puducherry Constituency 1",
+      "mp": "Candidate 1",
+      "party": "INC",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    }
+  ],
+  "Dadra & Nagar Haveli and Daman & Diu": [
+    {
+      "name": "Dadra & Nagar Haveli and Daman & Diu Constituency 1",
+      "mp": "Candidate 1",
+      "party": "BJP",
+      "voteShare": 45.1,
+      "turnout": 60.2,
+      "category": "General"
+    },
+    {
+      "name": "Dadra & Nagar Haveli and Daman & Diu Constituency 2",
+      "mp": "Candidate 2",
+      "party": "BJP",
+      "voteShare": 45.3,
+      "turnout": 60.3,
+      "category": "General"
+    }
+  ]
+}

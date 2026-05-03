@@ -23,54 +23,32 @@ function renderHistorySection() {
   const container = document.getElementById('history-container');
   if (!container) return;
   
-  container.innerHTML = HISTORY_DATA.map((h, i) => `
-    <div class="history-item" tabindex="0" role="button" aria-expanded="false" aria-controls="history-content-${i}">
-      <div class="history-item-header">
-        <span class="history-year-badge">${h.year}</span>
-        <div class="history-header-text">
-          <h3 class="history-title">${h.title}</h3>
-          <span class="history-stats">${h.stats}</span>
-        </div>
-        <svg class="history-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+  const timelineHtml = HISTORY_DATA.map((h) => {
+    return `
+      <div class="timeline-item">
+        <span class="timeline-year">${h.year}</span>
+        <h3 class="timeline-title">${h.title}</h3>
+        <span class="timeline-stats">${h.stats}</span>
+        <p class="timeline-text">${h.text}</p>
       </div>
-      <div class="history-content" id="history-content-${i}" aria-hidden="true">
-        <p>${h.text}</p>
-      </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 
-  // Add accordion behavior
-  const items = container.querySelectorAll('.history-item');
-  items.forEach(item => {
-    const toggleAccordion = () => {
-      const isExpanded = item.getAttribute('aria-expanded') === 'true';
-      
-      // Optional: Close others (accordion style)
-      // items.forEach(i => {
-      //   i.setAttribute('aria-expanded', 'false');
-      //   i.querySelector('.history-content').setAttribute('aria-hidden', 'true');
-      //   i.classList.remove('active');
-      // });
-      
-      if (!isExpanded) {
-        item.setAttribute('aria-expanded', 'true');
-        item.querySelector('.history-content').setAttribute('aria-hidden', 'false');
-        item.classList.add('active');
-      } else {
-        item.setAttribute('aria-expanded', 'false');
-        item.querySelector('.history-content').setAttribute('aria-hidden', 'true');
-        item.classList.remove('active');
-      }
-    };
+  container.innerHTML = `<div class="history-timeline">${timelineHtml}</div>`;
 
-    item.addEventListener('click', toggleAccordion);
-    item.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleAccordion();
+
+  // Add scroll reveal animations
+  const items = container.querySelectorAll('.timeline-item');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
       }
     });
-  });
+  }, { threshold: 0.1 });
+
+  items.forEach(item => observer.observe(item));
 }
 
 document.addEventListener('DOMContentLoaded', renderHistorySection);
+

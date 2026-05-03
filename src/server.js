@@ -54,7 +54,7 @@ app.get('/sw.js', (req, res) => {
 });
 
 // SPA fallback — serve index.html for all non-API routes
-app.get('{*path}', (req, res) => {
+app.get(/^((?!\/(api|data)).)*$/, (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
