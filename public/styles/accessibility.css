@@ -1,0 +1,150 @@
+/* ══════════════════════════════════════════════════════════
+   VoteWise India — Accessibility Styles (WCAG 2.1 AA)
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Skip Link ─────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  background: var(--saffron);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  z-index: 10000;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 16px;
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+
+/* ── Focus Styles ──────────────────────────────────────── */
+*:focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+/* ── Accessibility Toolbar ─────────────────────────────── */
+.a11y-toolbar {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 6px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  padding: 6px 8px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  z-index: 1001;
+  border: 1px solid var(--border);
+}
+
+.a11y-toolbar button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  font-family: var(--font-body);
+}
+.a11y-toolbar button:hover {
+  background: var(--surface-alt);
+  color: var(--saffron);
+}
+.a11y-toolbar button.active {
+  background: var(--saffron);
+  color: #fff;
+}
+
+/* ── Font Size Classes ─────────────────────────────────── */
+html.font-small { font-size: 14px; }
+html.font-medium { font-size: 16px; }
+html.font-large { font-size: 20px; }
+
+/* ── High Contrast Mode ────────────────────────────────── */
+body.high-contrast {
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --text-muted: #333333;
+  --surface: #ffffff;
+  --surface-alt: #f0f0f0;
+  --card-bg: #ffffff;
+  --border: #000000;
+  --border-strong: #000000;
+  --shadow-card: 0 0 0 2px #000;
+  --shadow-card-hover: 0 0 0 3px #000;
+  --shadow-elevated: 0 0 0 3px #000;
+}
+
+body.high-contrast .hero-tricolour-bg { display: none; }
+
+body.high-contrast .btn-primary {
+  background: #000;
+  color: #fff;
+  box-shadow: none;
+  border: 2px solid #000;
+}
+
+body.high-contrast .btn-secondary {
+  border: 2px solid #000;
+  color: #000;
+}
+
+body.high-contrast .timeline-card,
+body.high-contrast .rights-card,
+body.high-contrast .quiz-option {
+  border: 2px solid #000;
+}
+
+body.high-contrast .quiz-option.correct { border-color: #000; background: #c8e6c9; }
+body.high-contrast .quiz-option.incorrect { border-color: #000; background: #ffcdd2; }
+
+body.high-contrast a { color: #000; text-decoration: underline; }
+body.high-contrast a:hover { color: #333; }
+
+body.high-contrast .lang-btn.active { background: #000; color: #fff; }
+body.high-contrast .chat-bubble.user { background: #000; }
+body.high-contrast .chip { border-color: #000; color: #000; }
+
+body.high-contrast .myth-front { background: #000; }
+body.high-contrast .myth-back { background: #333; }
+
+/* ── Reduced Motion ────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ── Responsive Accessibility Toolbar ──────────────────── */
+@media (max-width: 768px) {
+  .a11y-toolbar {
+    top: auto;
+    bottom: 60px;
+    right: 12px;
+    flex-direction: column;
+  }
+}

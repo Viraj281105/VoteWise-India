@@ -1,0 +1,40 @@
+{
+  "name": "votewise-india",
+  "version": "1.0.0",
+  "description": "An interactive, accessible educational platform teaching Indian citizens about the election process",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:coverage && npm run test:e2e",
+    "lint": "eslint src/ public/js/",
+    "build:check": "node -e \"require('./src/server.js')\" && echo 'Build OK'"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "@google/generative-ai": "^0.21.0",
+    "firebase-admin": "^12.0.0",
+
+    "helmet": "^8.0.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.0.0",
+    "zod": "^3.22.0",
+    "node-cache": "^5.1.2",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^7.0.0",
+    "@playwright/test": "^1.44.0",
+    "axe-core": "^4.9.0",
+    "@axe-core/playwright": "^4.9.0",
+    "nodemon": "^3.0.0",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

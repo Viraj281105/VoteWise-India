@@ -1,0 +1,11 @@
+node_modules
+tests/
+.env
+.git
+*.test.js
+.dockerignore
+Dockerfile
+README.md
+.env.example
+jest.config.js
+playwright.config.js

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VoteWise India — An interactive, multilingual educational platform teaching Indian citizens about the election process, from voter registration to result declaration." />
+  <meta name="theme-color" content="#FF9933" />
+  <title>VoteWise India — Understand Your Vote. Shape Your Future.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Noto+Sans:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/accessibility.css" />
+</head>
+<body>
+  <!-- Skip-to-main-content: first focusable element -->
+  <a href="#main" class="skip-link" id="skip-link">Skip to main content</a>
+
+  <!-- ── Accessibility Toolbar ────────────────────── -->
+  <div class="a11y-toolbar" role="toolbar" aria-label="Accessibility controls" id="a11y-toolbar">
+    <button id="btn-font-decrease" aria-label="Decrease font size" title="Smaller text">A-</button>
+    <button id="btn-font-increase" aria-label="Increase font size" title="Larger text">A+</button>
+    <button id="btn-high-contrast" aria-label="Toggle high contrast mode" title="High contrast">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20V2z"/></svg>
+    </button>
+    <button id="btn-tts-toggle" aria-label="Toggle screen reader mode" title="Read aloud">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+    </button>
+  </div>
+
+  <!-- ── Language Selector ────────────────────────── -->
+  <nav class="lang-selector" role="navigation" aria-label="Language selection" id="lang-selector">
+    <button class="lang-btn active" data-lang="en" aria-label="English" aria-pressed="true">EN</button>
+    <button class="lang-btn" data-lang="hi" aria-label="Hindi" aria-pressed="false">हिं</button>
+    <button class="lang-btn" data-lang="ta" aria-label="Tamil" aria-pressed="false">தமிழ்</button>
+    <button class="lang-btn" data-lang="te" aria-label="Telugu" aria-pressed="false">తెలుగు</button>
+    <button class="lang-btn" data-lang="bn" aria-label="Bengali" aria-pressed="false">বাংলা</button>
+  </nav>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────── -->
+  <main id="main" role="main">
+
+    <!-- ═══ 1. HERO SECTION ═══ -->
+    <section id="hero" class="hero-section" role="region" aria-label="Welcome to VoteWise India">
+      <div class="hero-tricolour-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-ashoka-chakra" aria-hidden="true">
+          <svg viewBox="0 0 200 200" width="80" height="80"><circle cx="100" cy="100" r="90" fill="none" stroke="var(--navy)" stroke-width="3" opacity="0.15"/><g stroke="var(--navy)" stroke-width="2" opacity="0.12"><line x1="100" y1="10" x2="100" y2="190"/><line x1="10" y1="100" x2="190" y2="100"/><line x1="36" y1="36" x2="164" y2="164"/><line x1="164" y1="36" x2="36" y2="164"/></g></svg>
+        </div>
+        <h1 class="hero-headline" data-translate="hero-headline">Understand Your Vote.<br/>Shape Your Future.</h1>
+        <p class="hero-subheading" data-translate="hero-subheading">A complete guide to the Indian election process — interactive, multilingual, and built for every citizen.</p>
+        <div class="hero-cta-group">
+          <a href="#timeline" class="btn btn-primary" id="btn-start-learning">Start Learning →</a>
+          <a href="#quiz" class="btn btn-secondary" id="btn-take-quiz">Take the Quiz →</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      </div>
+    </section>
+
+    <!-- ═══ 2. INTERACTIVE ELECTION TIMELINE ═══ -->
+    <section id="timeline" class="section timeline-section" role="region" aria-label="Election process timeline">
+      <div class="container">
+        <h2 class="section-title" data-translate="timeline-title">The Election Journey</h2>
+        <p class="section-subtitle" data-translate="timeline-subtitle">Follow the 8 steps from announcement to government formation</p>
+        <div class="timeline-container" role="list" aria-label="Election timeline steps">
+          <!-- Timeline cards injected by timeline.js -->
+        </div>
+        <div class="timeline-detail-panel" id="timeline-detail" role="region" aria-label="Step details" aria-live="polite">
+          <p class="detail-placeholder" data-translate="timeline-placeholder">Click on a step above to learn more.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 3. CONSTITUENCY EXPLORER ═══ -->
+    <section id="constituency" class="section constituency-section" role="region" aria-label="Constituency explorer">
+      <div class="container">
+        <h2 class="section-title" data-translate="constituency-title">Constituency Explorer</h2>
+        <p class="section-subtitle" data-translate="constituency-subtitle">Discover your constituency's election data from the 2024 Lok Sabha elections</p>
+        <div class="constituency-controls">
+          <div class="form-group">
+            <label for="state-select" data-translate="label-state">Select State</label>
+            <select id="state-select" aria-label="Select a state">
+              <option value="">— Choose a state —</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="constituency-select" data-translate="label-constituency">Select Constituency</label>
+            <select id="constituency-select" aria-label="Select a constituency" disabled>
+              <option value="">— Choose a constituency —</option>
+            </select>
+          </div>
+        </div>
+        <div class="constituency-result" id="constituency-result" aria-live="polite">
+          <!-- populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 4. INTERACTIVE QUIZ ═══ -->
+    <section id="quiz" class="section quiz-section" role="region" aria-label="Election knowledge quiz">
+      <div class="container">
+        <h2 class="section-title" data-translate="quiz-title">Test Your Knowledge</h2>
+        <p class="section-subtitle" data-translate="quiz-subtitle">20 questions across 4 difficulty levels — how well do you know Indian elections?</p>
+        <div class="quiz-container" id="quiz-container">
+          <!-- Quiz start screen -->
+          <div class="quiz-start" id="quiz-start">
+            <div class="quiz-info-cards">
+              <div class="quiz-info-card"><span class="info-number">20</span><span class="info-label" data-translate="quiz-questions">Questions</span></div>
+              <div class="quiz-info-card"><span class="info-number">4</span><span class="info-label" data-translate="quiz-levels">Levels</span></div>
+              <div class="quiz-info-card"><span class="info-number">🏆</span><span class="info-label" data-translate="quiz-leaderboard-label">Leaderboard</span></div>
+            </div>
+            <button class="btn btn-primary btn-lg" id="btn-start-quiz" data-translate="quiz-start-btn">Start Quiz</button>
+          </div>
+          <!-- Quiz active (hidden initially) -->
+          <div class="quiz-active" id="quiz-active" style="display:none;" aria-live="polite">
+            <div class="quiz-progress">
+              <div class="quiz-progress-bar" id="quiz-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"></div>
+            </div>
+            <div class="quiz-meta">
+              <span class="quiz-question-counter" id="quiz-counter">Question 1 of 20</span>
+              <span class="quiz-difficulty-badge" id="quiz-difficulty">Easy</span>
+            </div>
+            <div class="quiz-question" id="quiz-question"></div>
+            <div class="quiz-options" id="quiz-options" role="radiogroup" aria-label="Answer choices"></div>
+            <div class="quiz-feedback" id="quiz-feedback" aria-live="assertive"></div>
+            <button class="btn btn-primary" id="btn-next-question" style="display:none;" data-translate="quiz-next">Next Question →</button>
+          </div>
+          <!-- Quiz results (hidden initially) -->
+          <div class="quiz-results" id="quiz-results" style="display:none;" aria-live="polite">
+            <div class="result-card" id="result-card">
+              <div class="result-score" id="result-score"></div>
+              <div class="result-badge" id="result-badge"></div>
+              <div class="result-percentile" id="result-percentile"></div>
+              <button class="btn btn-primary" id="btn-retry-quiz" data-translate="quiz-retry">Take Quiz Again</button>
+            </div>
+            <div class="leaderboard" id="leaderboard-container">
+              <h3 data-translate="quiz-leaderboard-heading">🏆 Leaderboard</h3>
+              <div id="leaderboard-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 5. AI ELECTION ASSISTANT (GEMINI CHATBOT) ═══ -->
+    <section id="chatbot" class="section chatbot-section" role="region" aria-label="AI election assistant powered by Gemini">
+      <div class="container">
+        <h2 class="section-title" data-translate="chat-title">Ask VoteWise AI</h2>
+        <p class="section-subtitle" data-translate="chat-subtitle">Powered by Google Gemini — your intelligent guide to Indian elections</p>
+        <div class="chat-container" id="chat-container">
+          <div class="chat-messages" id="chat-messages" role="log" aria-label="Chat messages" aria-live="polite">
+            <div class="chat-welcome">
+              <p data-translate="chat-welcome">👋 I'm VoteWise AI. Ask me anything about Indian elections!</p>
+            </div>
+          </div>
+          <div class="chat-chips" id="chat-chips" role="group" aria-label="Suggested questions">
+            <button class="chip" data-message="How do I register to vote?" data-translate="chip-register">How do I register to vote?</button>
+            <button class="chip" data-message="What is NOTA?" data-translate="chip-nota">What is NOTA?</button>
+            <button class="chip" data-message="Explain EVM security" data-translate="chip-evm">Explain EVM security</button>
+            <button class="chip" data-message="Can NRIs vote?" data-translate="chip-nri">Can NRIs vote?</button>
+          </div>
+          <form class="chat-input-form" id="chat-form" aria-label="Send a message">
+            <label for="chat-input" class="sr-only">Type your election question</label>
+            <input type="text" id="chat-input" placeholder="Ask about Indian elections..." maxlength="500" autocomplete="off" />
+            <button type="submit" id="btn-chat-send" aria-label="Send message">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 6. KNOW YOUR RIGHTS ═══ -->
+    <section id="rights" class="section rights-section" role="region" aria-label="Know your voting rights">
+      <div class="container">
+        <h2 class="section-title" data-translate="rights-title">Know Your Rights</h2>
+        <p class="section-subtitle" data-translate="rights-subtitle">Every Indian citizen's electoral rights, explained simply</p>
+        <div class="rights-grid" id="rights-grid">
+          <!-- Cards injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ 7. MYTH BUSTERS ═══ -->
+    <section id="myths" class="section myths-section" role="region" aria-label="Election myth busters">
+      <div class="container">
+        <h2 class="section-title" data-translate="myths-title">Myth Busters</h2>
+        <p class="section-subtitle" data-translate="myths-subtitle">Separate election facts from fiction</p>
+        <div class="myths-grid" id="myths-grid">
+          <!-- Flip cards injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ 8. FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://eci.gov.in" target="_blank" rel="noopener noreferrer">ECI Official Site</a>
+        <a href="tel:1950">Voter Helpline: 1950</a>
+        <span>National Voters' Day: Jan 25</span>
+      </div>
+      <div class="footer-a11y">
+        <p data-translate="footer-a11y">Accessibility: This platform is WCAG 2.1 AA compliant. Use the toolbar for font size, high contrast, and screen reader support.</p>
+      </div>
+      <div class="footer-credits">
+        <p>Built with <strong>Google Antigravity</strong>, <strong>Gemini AI</strong>, and <strong>Firebase</strong></p>
+        <p class="footer-privacy" data-translate="footer-privacy">No personal data stored. Anonymous sessions only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DOMPurify for chat sanitization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" integrity="sha384-irPFIqx2u/VB2giXJuIOhmhnTaK/UOSTiBXM8rc3LUIEBVU6IHbqgio3eOHWJxGl" crossorigin="anonymous" defer></script>
+
+  <!-- Application Scripts -->
+  <script src="js/app.js" defer></script>
+  <script src="js/timeline.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/chatbot.js" defer></script>
+  <script src="js/translate.js" defer></script>
+  <script src="js/tts.js" defer></script>
+</body>
+</html>
