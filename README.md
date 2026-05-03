@@ -8,7 +8,7 @@ Built for the Google PromptWars Hackathon. Powered by 5 Google Cloud services.
 
 ## 📸 Screenshots
 
-_Add screenshots after deployment._
+_Add screenshots after deployment (10 total sections)._
 
 ---
 
@@ -39,6 +39,15 @@ _Add screenshots after deployment._
     │ Flash  │ │ + Auth │ │  API   │ │              │
     └────────┘ └────────┘ └────────┘ └──────────────┘
 ```
+
+---
+
+## 📚 Content Coverage
+
+- **Quiz Questions**: 30 questions across 5 difficulty levels (including History).
+- **Historical Elections**: Detailed coverage of 13 key Indian general elections (1951 to 2024).
+- **Constituency Data**: Comprehensive 2024 and 2019 data for all 28 states and 5 UTs.
+- **Deep Dive**: Detailed explanation of the EVM and VVPAT process, including security features.
 
 ---
 

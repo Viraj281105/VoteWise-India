@@ -11,12 +11,14 @@ function securityMiddleware() {
       contentSecurityPolicy: {
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", "https://www.gstatic.com", "https://fonts.googleapis.com"],
+          scriptSrc: ["'self'", "https://www.gstatic.com", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"],
           styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
           fontSrc: ["'self'", "https://fonts.gstatic.com"],
           connectSrc: ["'self'"],
           imgSrc: ["'self'", "data:"],
           mediaSrc: ["'self'", "blob:", "data:"],
+          workerSrc: ["'self'"],
+          manifestSrc: ["'self'"],
         },
       },
     }),

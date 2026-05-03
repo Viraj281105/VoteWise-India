@@ -12,19 +12,19 @@ jest.mock('../../src/config/firebase', () => ({
 }));
 
 describe('Quiz Scoring', () => {
-  test('score of 0 out of 20 returns 0% percentage', () => {
-    const pct = Math.round((0 / 20) * 100);
+  test('score of 0 out of 30 returns 0% percentage', () => {
+    const pct = Math.round((0 / 30) * 100);
     expect(pct).toBe(0);
   });
 
-  test('score of 20 out of 20 returns 100%', () => {
-    const pct = Math.round((20 / 20) * 100);
+  test('score of 30 out of 30 returns 100%', () => {
+    const pct = Math.round((30 / 30) * 100);
     expect(pct).toBe(100);
   });
 
-  test('score of 13 out of 20 returns 65%', () => {
-    const pct = Math.round((13 / 20) * 100);
-    expect(pct).toBe(65);
+  test('score of 13 out of 30 returns 43%', () => {
+    const pct = Math.round((13 / 30) * 100);
+    expect(pct).toBe(43);
   });
 
   test('score cannot be negative', () => {
@@ -33,8 +33,8 @@ describe('Quiz Scoring', () => {
   });
 
   test('score cannot exceed total', () => {
-    const score = Math.min(20, 25);
-    expect(score).toBe(20);
+    const score = Math.min(30, 35);
+    expect(score).toBe(30);
   });
 });
 
@@ -62,8 +62,8 @@ describe('Leaderboard', () => {
 
   test('returns ranked entries from Firestore', async () => {
     const docs = [
-      { data: () => ({ score: 20, total: 20, timestamp: '2024-01-01' }) },
-      { data: () => ({ score: 15, total: 20, timestamp: '2024-01-02' }) },
+      { data: () => ({ score: 30, total: 30, timestamp: '2024-01-01' }) },
+      { data: () => ({ score: 15, total: 30, timestamp: '2024-01-02' }) },
     ];
     const mockDb = {
       collection: jest.fn().mockReturnValue({
@@ -77,14 +77,14 @@ describe('Leaderboard', () => {
     const result = await getLeaderboard(10);
     expect(result).toHaveLength(2);
     expect(result[0].rank).toBe(1);
-    expect(result[0].score).toBe(20);
+    expect(result[0].score).toBe(30);
   });
 });
 
 describe('saveQuizScore', () => {
   test('returns saved false when Firestore unavailable', async () => {
     getFirestore.mockReturnValue(null);
-    const result = await saveQuizScore('uuid', 10, 20, []);
+    const result = await saveQuizScore('uuid', 10, 30, []);
     expect(result.saved).toBe(false);
   });
 
@@ -95,7 +95,7 @@ describe('saveQuizScore', () => {
       }),
     };
     getFirestore.mockReturnValue(mockDb);
-    const result = await saveQuizScore('test-uuid', 15, 20, []);
+    const result = await saveQuizScore('test-uuid', 15, 30, []);
     expect(result.saved).toBe(true);
     expect(result.docId).toBe('test-doc-id');
   });

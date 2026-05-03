@@ -12,6 +12,11 @@ jest.mock('@google/generative-ai', () => ({
   })),
 }));
 
+// Mock dotenv so it doesn't overwrite our deleted env vars in tests
+jest.mock('dotenv', () => ({
+  config: jest.fn(),
+}));
+
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 describe('Gemini Service', () => {

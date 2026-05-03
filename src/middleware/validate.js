@@ -8,16 +8,16 @@ const chatSchema = z.object({
 
 /** Schema for POST /api/quiz/submit */
 const quizSubmitSchema = z.object({
-  sessionId: z.string().uuid('Invalid session ID format'),
-  score: z.number().int().min(0).max(20),
-  total: z.number().int().min(1).max(20),
+  sessionId: z.string().uuid({ message: 'Invalid session ID format' }),
+  score: z.number().int().min(0).max(30, 'Score cannot exceed 30'),
+  total: z.number().int().min(1).max(30),
   answers: z.array(
     z.object({
       questionId: z.number().int(),
-      selected: z.number().int().min(0).max(3),
+      selected: z.number().int(),
       correct: z.boolean(),
     })
-  ),
+  ).max(30),
 });
 
 /** Schema for POST /api/translate */

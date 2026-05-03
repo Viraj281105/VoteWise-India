@@ -3,7 +3,7 @@
  * 20 questions across 4 difficulty levels with Firestore integration.
  */
 
-const QUIZ_QUESTIONS = [
+const FALLBACK_QUESTIONS = [
   // ── EASY (1-5) ──
   { id: 1, difficulty: 'easy', question: 'What does ECI stand for?', options: ['Election Commission of India', 'Electoral Council of India', 'Election Committee of India', 'Electoral Commission of India'], correct: 0, explanation: 'ECI stands for Election Commission of India, established on 25 January 1950 under Article 324 of the Constitution.' },
   { id: 2, difficulty: 'easy', question: 'What is the minimum age to vote in India?', options: ['21 years', '16 years', '18 years', '25 years'], correct: 2, explanation: 'The 61st Amendment Act (1988) lowered the voting age from 21 to 18 years, as specified in Article 326.' },
@@ -28,12 +28,33 @@ const QUIZ_QUESTIONS = [
   { id: 18, difficulty: 'expert', question: 'What is a hung parliament and what follows constitutionally?', options: ['When Parliament is dissolved by the PM; President calls new elections', 'When no party gets 272+ seats; President invites the largest party to prove majority', 'When the Speaker resigns; Deputy Speaker becomes PM', 'When NOTA wins; all candidates are disqualified'], correct: 1, explanation: 'A hung parliament occurs when no single party or pre-election coalition wins 272+ Lok Sabha seats (absolute majority). The President, by convention, invites the leader of the single largest party or coalition to form government and prove majority through a floor test within a stipulated timeframe.' },
   { id: 19, difficulty: 'expert', question: 'What is the Anti-Defection Law and how does it relate to elections?', options: ['It prevents candidates from contesting from multiple constituencies', 'It disqualifies elected members who switch parties, under the 10th Schedule', 'It prohibits political parties from merging during elections', 'It bans candidates with criminal records from contesting'], correct: 1, explanation: 'The Anti-Defection Law (52nd Amendment, 1985) added the 10th Schedule to the Constitution. It disqualifies legislators who voluntarily give up party membership or vote against party whip. The Speaker/Chairman decides disqualification cases. A merger requires 2/3 of the party\'s legislators to be valid.' },
   { id: 20, difficulty: 'expert', question: 'How does the FPTP (First Past the Post) system affect coalition politics in India?', options: ['FPTP ensures single-party majority governments every time', 'FPTP can lead to disproportionate seat-vote ratios, encouraging pre-election coalitions', 'FPTP prevents any coalition from forming', 'FPTP requires a minimum 50% vote share to win'], correct: 1, explanation: 'Under FPTP, a party can win a large number of seats with a relatively small vote share (e.g., BJP won 303 seats with 37.4% vote share in 2019). This "winner-take-all" dynamic encourages parties to form pre-election coalitions to consolidate votes and avoid splitting, leading to India\'s alliance-based politics (NDA, INDIA, etc.).' },
+  // ── HISTORY (21-30) ──
+  { id: 21, difficulty: 'history', question: 'Who became India\'s first Prime Minister after the 1951-52 elections?', options: ['Sardar Patel', 'Morarji Desai', 'Jawaharlal Nehru', 'Indira Gandhi'], correct: 2, explanation: 'Jawaharlal Nehru became the first elected PM after the 1951-52 elections, leading the INC to 364 seats.' },
+  { id: 22, difficulty: 'history', question: 'Which election year marked the rise of regional parties and the first hung assemblies in several states?', options: ['1957', '1962', '1967', '1971'], correct: 2, explanation: 'In 1967, while Congress retained power centrally, it lost in several states marking the rise of regional parties.' },
+  { id: 23, difficulty: 'history', question: 'Which Prime Minister led the "Garibi Hatao" campaign in the 1971 elections?', options: ['Indira Gandhi', 'Morarji Desai', 'Charan Singh', 'Rajiv Gandhi'], correct: 0, explanation: 'Indira Gandhi\'s "Garibi Hatao" (Eradicate Poverty) slogan led to a massive landslide victory in 1971.' },
+  { id: 24, difficulty: 'history', question: 'Which party formed the first non-Congress government at the center in 1977?', options: ['Bharatiya Janata Party', 'Janata Party', 'Communist Party of India', 'National Front'], correct: 1, explanation: 'The Janata Party coalition under Morarji Desai formed the first non-Congress government post the Emergency.' },
+  { id: 25, difficulty: 'history', question: 'Which year saw the highest number of seats ever won by a single party (414 seats by INC)?', options: ['1971', '1984', '2014', '2019'], correct: 1, explanation: 'In 1984, following Indira Gandhi\'s assassination, Rajiv Gandhi led the INC to a historic 414/542 seats.' },
+  { id: 26, difficulty: 'history', question: 'Which Prime Minister formed a minority government in 1989, cementing the coalition era?', options: ['V.P. Singh', 'Chandra Shekhar', 'P.V. Narasimha Rao', 'H.D. Deve Gowda'], correct: 0, explanation: 'V.P. Singh formed the National Front government supported by the BJP and Left from the outside in 1989.' },
+  { id: 27, difficulty: 'history', question: 'Between 1996 and 1999, how many general elections took place due to political instability?', options: ['One', 'Two', 'Three', 'Four'], correct: 2, explanation: 'Three elections took place (1996, 1998, 1999) before the NDA formed a stable government.' },
+  { id: 28, difficulty: 'history', question: 'Which was the first non-Congress coalition government to complete a full 5-year term?', options: ['National Front (1989)', 'United Front (1996)', 'NDA (1999)', 'UPA (2004)'], correct: 2, explanation: 'The BJP-led NDA under Atal Bihari Vajpayee, elected in 1999, was the first non-Congress coalition to complete a full term.' },
+  { id: 29, difficulty: 'history', question: 'In 2014, the BJP became the first single party in 30 years to secure an absolute majority. How many seats did they win?', options: ['272', '282', '303', '315'], correct: 1, explanation: 'The BJP won 282 out of 543 seats in the 2014 Lok Sabha elections under Narendra Modi.' },
+  { id: 30, difficulty: 'history', question: 'How many seats did the BJP win in the 2024 elections, relying on the NDA coalition?', options: ['272', '240', '303', '293'], correct: 1, explanation: 'The BJP secured 240 seats in 2024 (falling short of the 272 majority mark) but formed the government through the NDA coalition.' }
 ];
 
-let currentQuestion = 0;
+const ROUNDS = [
+  { difficulty: 'easy',    label: 'Easy',    count: 5 },
+  { difficulty: 'medium',  label: 'Medium',  count: 5 },
+  { difficulty: 'hard',    label: 'Hard',    count: 5 },
+  { difficulty: 'expert',  label: 'Expert',  count: 5 },
+  { difficulty: 'history', label: 'History', count: 5 }
+];
+
+let currentRoundIndex = 0;
+let currentQuestion = 0; // within the round
+let globalQuestionCount = 0;
 let score = 0;
 let answers = [];
-let shuffledQuestions = [];
+let roundQuestions = [];
 let quizActive = false;
 
 function shuffleArray(arr) {
@@ -45,9 +66,19 @@ function shuffleArray(arr) {
   return a;
 }
 
-function startQuiz() {
-  shuffledQuestions = shuffleArray(QUIZ_QUESTIONS);
-  currentQuestion = 0;
+function getUsedIds() {
+  const ids = sessionStorage.getItem('vw_used_ids');
+  return ids ? JSON.parse(ids) : [];
+}
+
+function addUsedIds(ids) {
+  const used = getUsedIds();
+  sessionStorage.setItem('vw_used_ids', JSON.stringify([...new Set([...used, ...ids])]));
+}
+
+async function startQuiz() {
+  currentRoundIndex = 0;
+  globalQuestionCount = 0;
   score = 0;
   answers = [];
   quizActive = true;
@@ -56,23 +87,87 @@ function startQuiz() {
   document.getElementById('quiz-results').style.display = 'none';
   document.getElementById('quiz-active').style.display = 'block';
 
+  await startRound();
+}
+
+async function startRound() {
+  if (currentRoundIndex >= ROUNDS.length) {
+    return finishQuiz();
+  }
+
+  const round = ROUNDS[currentRoundIndex];
+  currentQuestion = 0;
+
+  // Show loading
+  document.getElementById('quiz-question').innerHTML = `
+    <div class="quiz-loading">
+      <div class="quiz-loading-spinner"></div>
+      <p>✨ Generating your <strong>${round.label}</strong> questions with AI...</p>
+    </div>
+  `;
+  document.getElementById('quiz-options').innerHTML = '';
+  document.getElementById('quiz-feedback').style.display = 'none';
+  document.getElementById('btn-next-question').style.display = 'none';
+
+  // Fetch from API
+  let fetchedQuestions = [];
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000);
+
+    const res = await fetch('/api/quiz/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ difficulty: round.difficulty, count: round.count, sessionId: window.SESSION_ID }),
+      signal: controller.signal
+    });
+    
+    clearTimeout(timeoutId);
+
+    if (res.ok) {
+      const data = await res.json();
+      fetchedQuestions = data.questions;
+    }
+  } catch (error) {
+    console.error('Quiz generation failed or timed out, using fallback.', error);
+  }
+
+  // Fallback if needed
+  if (!fetchedQuestions || fetchedQuestions.length < round.count) {
+    const used = getUsedIds();
+    const available = FALLBACK_QUESTIONS.filter(q => q.difficulty === round.difficulty && !used.includes(q.id));
+    // If not enough unused, just use any from that difficulty
+    const pool = available.length >= round.count ? available : FALLBACK_QUESTIONS.filter(q => q.difficulty === round.difficulty);
+    const needed = round.count - (fetchedQuestions ? fetchedQuestions.length : 0);
+    const shuffledPool = shuffleArray(pool).slice(0, needed);
+    fetchedQuestions = [...(fetchedQuestions || []), ...shuffledPool];
+  }
+
+  // Record used IDs
+  addUsedIds(fetchedQuestions.map(q => q._docId || q.id));
+
+  roundQuestions = fetchedQuestions.slice(0, round.count);
   renderQuestion();
 }
 
 function renderQuestion() {
-  const q = shuffledQuestions[currentQuestion];
-  const total = shuffledQuestions.length;
-  const progress = ((currentQuestion) / total) * 100;
+  const q = roundQuestions[currentQuestion];
+  const total = 25;
+  const progress = (globalQuestionCount / total) * 100;
 
   document.getElementById('quiz-progress-bar').style.width = `${progress}%`;
-  document.getElementById('quiz-progress-bar').setAttribute('aria-valuenow', currentQuestion);
-  document.getElementById('quiz-counter').textContent = `Question ${currentQuestion + 1} of ${total}`;
+  document.getElementById('quiz-progress-bar').setAttribute('aria-valuenow', globalQuestionCount);
+  document.getElementById('quiz-counter').textContent = `Question ${globalQuestionCount + 1} of ${total}`;
 
   const badge = document.getElementById('quiz-difficulty');
   badge.textContent = q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1);
   badge.className = `quiz-difficulty-badge ${q.difficulty}`;
 
-  document.getElementById('quiz-question').textContent = q.question;
+  const sourceHtml = q.source === 'AI Generated' || q._docId 
+    ? '<span class="source-badge ai">✨ AI Generated</span>' 
+    : '<span class="source-badge curated">📚 Curated</span>';
+
+  document.getElementById('quiz-question').innerHTML = `${sourceHtml}<br/>${escapeHTMLQuiz(q.question)}`;
 
   const optionsContainer = document.getElementById('quiz-options');
   const letters = ['A', 'B', 'C', 'D'];
@@ -86,10 +181,9 @@ function renderQuestion() {
   const feedbackEl = document.getElementById('quiz-feedback');
   feedbackEl.className = 'quiz-feedback';
   feedbackEl.style.display = 'none';
-  feedbackEl.textContent = '';
+  feedbackEl.innerHTML = '';
   document.getElementById('btn-next-question').style.display = 'none';
 
-  // Attach option listeners
   optionsContainer.querySelectorAll('.quiz-option').forEach((btn) => {
     btn.addEventListener('click', () => selectAnswer(parseInt(btn.dataset.index)));
     btn.addEventListener('keydown', (e) => {
@@ -102,13 +196,12 @@ function renderQuestion() {
 }
 
 function selectAnswer(index) {
-  const q = shuffledQuestions[currentQuestion];
+  const q = roundQuestions[currentQuestion];
   const isCorrect = index === q.correct;
   if (isCorrect) score++;
 
-  answers.push({ questionId: q.id, selected: index, correct: isCorrect });
+  answers.push({ questionId: q._docId || q.id || 0, selected: index, correct: isCorrect });
 
-  // Disable all options and mark correct/incorrect
   document.querySelectorAll('.quiz-option').forEach((btn, i) => {
     btn.classList.add('disabled');
     if (i === q.correct) btn.classList.add('correct');
@@ -116,26 +209,45 @@ function selectAnswer(index) {
     btn.setAttribute('aria-checked', i === index ? 'true' : 'false');
   });
 
-  // Show feedback
+  const isAi = q.source === 'AI Generated' || q._docId;
+  const feedbackHtml = isAi && q._docId ? `
+    <div class="feedback-row" id="feedback-row-${q._docId}">
+      <span>Was this question helpful?</span>
+      <button class="thumb-btn" data-helpful="true" onclick="submitFeedback('${q._docId}', true)">👍</button>
+      <button class="thumb-btn" data-helpful="false" onclick="submitFeedback('${q._docId}', false)">👎</button>
+    </div>
+  ` : '';
+
   const feedbackEl = document.getElementById('quiz-feedback');
   feedbackEl.className = `quiz-feedback show ${isCorrect ? 'correct-feedback' : 'incorrect-feedback'}`;
   feedbackEl.style.display = 'block';
-  feedbackEl.textContent = `${isCorrect ? '✓ Correct!' : '✗ Incorrect.'} ${q.explanation}`;
+  feedbackEl.innerHTML = `<strong>${isCorrect ? '✓ Correct!' : '✗ Incorrect.'}</strong> ${escapeHTMLQuiz(q.explanation)} ${feedbackHtml}`;
 
   document.getElementById('btn-next-question').style.display = 'inline-flex';
   document.getElementById('btn-next-question').focus();
 }
+
+window.submitFeedback = async function(questionId, wasHelpful) {
+  const row = document.getElementById(`feedback-row-${questionId}`);
+  if (row) row.style.display = 'none';
+  try {
+    await fetch('/api/quiz/feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ questionId, wasHelpful, sessionId: window.SESSION_ID })
+    });
+  } catch (e) {}
+};
 
 async function finishQuiz() {
   quizActive = false;
   document.getElementById('quiz-active').style.display = 'none';
   document.getElementById('quiz-results').style.display = 'block';
 
-  const total = shuffledQuestions.length;
+  const total = 25;
   const pct = Math.round((score / total) * 100);
   document.getElementById('result-score').textContent = `${score} / ${total}`;
 
-  // Badge based on score
   let badgeText, badgeColor;
   if (pct >= 90) { badgeText = '🏅 Election Expert!'; badgeColor = '#FFD700'; }
   else if (pct >= 70) { badgeText = '🎖️ Well Informed Voter'; badgeColor = '#C0C0C0'; }
@@ -147,12 +259,11 @@ async function finishQuiz() {
   badgeEl.style.background = badgeColor;
   badgeEl.style.color = pct >= 90 ? '#333' : '#fff';
 
-  // Submit to backend
   try {
     const res = await fetch('/api/quiz/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ sessionId: SESSION_ID, score, total, answers }),
+      body: JSON.stringify({ sessionId: window.SESSION_ID, score, total, answers }),
     });
     if (res.ok) {
       const data = await res.json();
@@ -162,7 +273,6 @@ async function finishQuiz() {
     document.getElementById('result-percentile').textContent = `Score: ${pct}% — Great effort!`;
   }
 
-  // Load leaderboard
   loadLeaderboard();
 }
 
@@ -183,25 +293,25 @@ async function loadLeaderboard() {
         <span style="color:var(--text-muted);font-size:0.78rem;">${new Date(e.timestamp).toLocaleDateString()}</span>
       </div>
     `).join('');
-  } catch {
-    // silent fail
-  }
+  } catch { }
 }
 
 function escapeHTMLQuiz(str) {
+  if (!str) return '';
   const d = document.createElement('div');
   d.textContent = str;
   return d.innerHTML;
 }
 
-/* ── Event Listeners ─────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-start-quiz')?.addEventListener('click', startQuiz);
 
   document.getElementById('btn-next-question')?.addEventListener('click', () => {
     currentQuestion++;
-    if (currentQuestion >= shuffledQuestions.length) {
-      finishQuiz();
+    globalQuestionCount++;
+    if (currentQuestion >= ROUNDS[currentRoundIndex].count) {
+      currentRoundIndex++;
+      startRound();
     } else {
       renderQuestion();
     }

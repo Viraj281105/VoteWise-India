@@ -29,4 +29,12 @@ const generalLimiter = rateLimit({
   legacyHeaders: false,
 });
 
-module.exports = { chatLimiter, translateLimiter, generalLimiter };
+const quizGenerateLimiter = rateLimit({
+  windowMs: 60_000,
+  max: 5,
+  message: { error: 'Too many quiz generation requests, please wait.' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+module.exports = { chatLimiter, translateLimiter, generalLimiter, quizGenerateLimiter };

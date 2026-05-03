@@ -41,10 +41,12 @@ describe('Translate Schema Validation', () => {
 
 
 describe('Quiz Submit Schema Validation', () => {
-  test('rejects score greater than 20', () => {
+  test('rejects score greater than 30', () => {
     const result = quizSubmitSchema.safeParse({
-      sessionId: '550e8400-e29b-41d4-a716-446655440000',
-      score: 25, total: 20, answers: [],
+      sessionId: '123e4567-e89b-12d3-a456-426614174000',
+      score: 31,
+      total: 30,
+      answers: [],
     });
     expect(result.success).toBe(false);
   });

@@ -7,8 +7,9 @@ const { initializeFirebase } = require('./config/firebase');
 
 // Route modules
 const chatRoutes = require('./routes/chat');
-const quizRoutes = require('./routes/quiz');
-const translateRoutes = require('./routes/translate');
+const quizRouter = require('./routes/quiz');
+const quizGenerateRouter = require('./routes/quiz-generate');
+const translateRouter = require('./routes/translate');
 
 
 const app = express();
@@ -28,8 +29,9 @@ app.use('/api', generalLimiter);
 
 // ── API Routes ──────────────────────────────────────────
 app.use('/api/chat', chatRoutes);
-app.use('/api/quiz', quizRoutes);
-app.use('/api/translate', translateRoutes);
+app.use('/api/quiz', quizRouter);
+app.use('/api/quiz', quizGenerateRouter);
+app.use('/api/translate', translateRouter);
 
 
 // ── Health Check (no auth, no rate limit) ───────────────
@@ -43,6 +45,13 @@ app.get('/health', (req, res) => {
 
 // ── Static Files ────────────────────────────────────────
 app.use(express.static(path.join(__dirname, '..', 'public')));
+
+app.get('/manifest.json', (req, res) => res.sendFile(path.join(__dirname, '../public/manifest.json')));
+app.get('/sw.js', (req, res) => {
+  res.setHeader('Service-Worker-Allowed', '/');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.sendFile(path.join(__dirname, '../public/sw.js'));
+});
 
 // SPA fallback — serve index.html for all non-API routes
 app.get('{*path}', (req, res) => {
