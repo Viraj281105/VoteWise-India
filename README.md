@@ -1,118 +1,59 @@
 # 🗳️ VoteWise India
 
-**An interactive, accessible, and multilingual educational platform that teaches Indian citizens how the election process works — from voter registration through result declaration.**
+> **Empowering Every Indian. Mastering Democracy.**
+> An interactive, multilingual, AI-powered platform that teaches Indian citizens how their elections work — from voter registration to result declaration.
 
-Built for the Google PromptWars Hackathon. Powered by 5 Google Cloud services.
+**Built for the Google PromptWars Hackathon** · Powered by 5 Google Cloud services · Live at [vote-wise-india.vercel.app](https://vote-wise-india.vercel.app)
 
 ---
 
-## 📸 Screenshots
+## ✨ Features
 
-_Add screenshots after deployment (10 total sections)._
+| Feature | Description |
+|---|---|
+| 📖 Interactive Timeline | 8-step animated election process walkthrough |
+| 🗺️ Constituency Explorer | Real 2024 Lok Sabha data for all states & UTs |
+| 📝 Quiz Engine | 25 questions, 5 difficulty levels, live Firestore leaderboard |
+| 🤖 AI Assistant | Gemini-powered chatbot for any election question |
+| 🌐 Multilingual | Hindi, Tamil, Telugu, Bengali via Google Translate API |
+| 🔊 Text-to-Speech | Google TTS for full audio accessibility |
+| 🗺️ Election Results Map | Interactive 2024 results map with D3.js |
+| ♿ WCAG 2.1 AA | Skip links, focus rings, high contrast, font scaling |
+| 🔒 Security Hardened | Helmet CSP, rate limiting, Zod validation, DOMPurify |
+
+---
+
+## 🌐 Google Services Used
+
+| # | Service | Purpose |
+|---|---------|---------|
+| 1 | **Gemini 1.5 Flash** | AI chatbot for election Q&A |
+| 2 | **Firebase Firestore** | Quiz scores, leaderboard, session logging |
+| 3 | **Firebase Anonymous Auth** | Session tracking without requiring login |
+| 4 | **Google Cloud Translation API** | Hindi, Tamil, Telugu, Bengali support |
+| 5 | **Google Cloud Text-to-Speech API** | Audio accessibility for voter rights section |
 
 ---
 
 ## 🏗️ Architecture
 
 ```
-┌────────────────────────────────────────────────────────────┐
-│                     Browser (Client)                       │
-│  ┌───────────┐ ┌──────┐ ┌───────┐ ┌─────┐ ┌────────────┐   │
-│  │ Timeline  │ │ Quiz │ │ Chat  │ │ TTS │ │ Translate  │   │
-│  └─────┬─────┘ └──┬───┘ └──┬────┘ └──┬──┘ └─────┬──────┘   │
-│        │          │        │         │           │         │
-└────────┼──────────┼────────┼─────────┼───────────┼─────────┘
-         │          │        │         │           │
-    ┌────▼──────────▼────────▼─────────▼───────────▼──────┐
-    │              Google Cloud Run (Express 5)           │
-    │  ┌──────────────────────────────────────────────┐   │
-    │  │  Middleware: Helmet │ CORS │ Rate Limit │ Zod │  │
-    │  └──────────────────────────────────────────────┘   │
-    │  ┌──────┐ ┌───────┐ ┌──────────┐ ┌──────┐           │
-    │  │ Chat │ │ Quiz  │ │Translate │ │ TTS  │  Routes   │
-    │  └──┬───┘ └──┬────┘ └────┬─────┘ └──┬───┘           │
-    └─────┼────────┼───────────┼──────────┼───────────────┘
-          │        │           │          │
-    ┌─────▼──┐ ┌───▼─────┐ ┌───▼─────┐ ┌───▼──────────┐
-    │ Gemini │ │Firebase │ │Google   │ │Google Text-  │
-    │  1.5   │ │Firestore│ │Translate│ │to-Speech API │
-    │ Flash  │ │ + Auth  │ │  API    │ │              │
-    └────────┘ └─────────┘ └─────────┘ └──────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                        Browser (Client)                     │
+│   Timeline │ Quiz │ AI Chat │ TTS │ Translate │ Map         │
+└────────────────────────┬────────────────────────────────────┘
+                         │ fetch('/api/...')
+┌────────────────────────▼────────────────────────────────────┐
+│               Vercel Serverless Functions (/api)            │
+│         Helmet │ CORS │ Rate Limiting │ Zod Validation      │
+│   /api/chat  │  /api/quiz/*  │  /api/translate  │ /api/tts  │
+└──────┬───────────────┬─────────────────┬──────────┬─────────┘
+       │               │                 │          │
+  ┌────▼───┐     ┌─────▼──────┐   ┌──────▼───┐ ┌───▼──────────┐
+  │Gemini  │     │  Firebase  │   │ Google   │ │ Google TTS   │
+  │1.5Flash│     │ Firestore  │   │Translate │ │     API      │
+  └────────┘     └────────────┘   └──────────┘ └──────────────┘
 ```
-
----
-
-## 📚 Content Coverage
-
-- **Quiz Questions**: 30 questions across 5 difficulty levels (including History).
-- **Historical Elections**: Detailed coverage of 13 key Indian general elections (1951 to 2024).
-- **Constituency Data**: Comprehensive 2024 and 2019 data for all 28 states and 5 UTs.
-- **Deep Dive**: Detailed explanation of the EVM and VVPAT process, including security features.
-
----
-
-## 🚀 Features
-
-| Feature | Description |
-|---|---|
-| 📖 Interactive Timeline | 8-step election process with animated cards |
-| 🗺️ Constituency Explorer | Real 2024 Lok Sabha data for 15 constituencies |
-| 📝 Quiz Engine | 20 questions, 4 difficulty levels, Firestore leaderboard |
-| 🤖 AI Assistant | Gemini-powered chatbot for election questions |
-| 🌐 Multilingual | Hindi, Tamil, Telugu, Bengali via Google Translate |
-| 🔊 Text-to-Speech | Google TTS for accessibility |
-| ♿ WCAG 2.1 AA | Skip links, focus management, high contrast, font scaling |
-| 🔒 Security | Helmet CSP, rate limiting, Zod validation, DOMPurify |
-
----
-
-## 🛠️ Local Setup
-
-### Prerequisites
-- Node.js 20+
-- Google Cloud project with APIs enabled
-
-### Steps
-
-```bash
-# 1. Clone
-git clone https://github.com/your-username/votewise-india.git
-cd votewise-india
-
-# 2. Install
-npm install
-
-# 3. Configure
-cp .env.example .env
-# Fill in your API keys in .env
-
-# 4. Run
-npm run dev
-
-# 5. Open
-# http://localhost:8080
-```
-
----
-
-## 🔑 API Keys Setup
-
-### Gemini API
-1. Go to [Google AI Studio](https://aistudio.google.com/)
-2. Create an API key
-3. Set `GEMINI_API_KEY` in `.env`
-
-### Firebase
-1. Create project at [Firebase Console](https://console.firebase.google.com/)
-2. Enable **Firestore Database** (test mode for dev)
-3. Enable **Anonymous Authentication**
-4. Go to Project Settings → Service Accounts → Generate new private key
-5. Extract `project_id`, `private_key`, `client_email` to `.env`
-
-### Google Cloud APIs
-1. Enable **Cloud Translation API** in Google Cloud Console
-2. Enable **Cloud Text-to-Speech API**
-3. Create API keys and set in `.env`
 
 ---
 
@@ -120,55 +61,82 @@ npm run dev
 
 | Method | Route | Description | Rate Limit |
 |--------|-------|-------------|------------|
-| `POST` | `/api/chat` | Gemini AI chat | 10/min |
-| `POST` | `/api/quiz/submit` | Submit quiz score | 100/min |
-| `GET` | `/api/quiz/leaderboard` | Top 10 scores | 100/min |
-| `POST` | `/api/translate` | Translate text | 30/min |
-| `POST` | `/api/tts` | Text-to-speech | 20/min |
-| `GET` | `/health` | Health check | None |
+| `POST` | `/api/chat` | Gemini AI election Q&A | 10/min |
+| `POST` | `/api/quiz/generate` | Generate quiz questions | 20/min |
+| `POST` | `/api/quiz/submit` | Submit quiz score to Firestore | 100/min |
+| `GET` | `/api/quiz/leaderboard` | Fetch top 10 scores | 100/min |
+| `POST` | `/api/quiz/feedback` | Submit question feedback | 30/min |
+| `POST` | `/api/translate` | Translate content to regional language | 30/min |
+
+---
+
+## 📚 Content Coverage
+
+- **25 Quiz Questions** across 5 difficulty levels including History
+- **13 Historical Elections** covered in depth (1951–2024)
+- **543 Lok Sabha Constituencies** — 2024 & 2019 result data
+- **EVM & VVPAT** deep dive with security feature breakdown
+- **Voter Rights** section with plain-language explanations
+- **Myth Busters** debunking common election misinformation
+
+---
+
+## 🚀 Local Setup
+
+### Prerequisites
+- Node.js 20+
+- Google Cloud project with APIs enabled
+
+```bash
+# 1. Clone
+git clone https://github.com/Viraj281105/VoteWise-India.git
+cd VoteWise-India
+
+# 2. Install
+npm install
+
+# 3. Configure
+cp .env.example .env
+# Fill in your API keys (see below)
+
+# 4. Run
+npm run dev
+# → http://localhost:8080
+```
+
+---
+
+## 🔑 Environment Variables
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+FIREBASE_PROJECT_ID=your_firebase_project_id
+FIREBASE_PRIVATE_KEY=your_firebase_private_key
+FIREBASE_CLIENT_EMAIL=your_firebase_client_email
+NODE_ENV=production
+```
+
+### Getting your keys
+
+**Gemini API** → [aistudio.google.com](https://aistudio.google.com) → Create API key
+
+**Firebase** → [console.firebase.google.com](https://console.firebase.google.com) → Project Settings → Service Accounts → Generate new private key
 
 ---
 
 ## 🧪 Testing
 
 ```bash
-# Unit + Integration (Jest)
+# Unit + Integration tests (Jest)
 npm run test:coverage
 
-# E2E (Playwright)
+# E2E tests (Playwright + axe-core accessibility)
 npx playwright install
 npm run test:e2e
 
-# All tests
+# Run everything
 npm run test:all
 ```
-
----
-
-## 🐳 Docker & Cloud Run Deployment
-
-```bash
-# Build
-gcloud builds submit --tag gcr.io/PROJECT_ID/votewise-india
-
-# Deploy
-gcloud run deploy votewise-india \
-  --image gcr.io/PROJECT_ID/votewise-india \
-  --platform managed \
-  --region asia-south1 \
-  --allow-unauthenticated \
-  --set-env-vars GEMINI_API_KEY=...,FIREBASE_PROJECT_ID=...,FIREBASE_CLIENT_EMAIL=...,FIREBASE_PRIVATE_KEY=...,GOOGLE_TRANSLATE_API_KEY=...,GOOGLE_TTS_API_KEY=...
-```
-
----
-
-## 🌐 Google Services Used
-
-1. **Gemini 1.5 Flash** — AI chatbot for election Q&A
-2. **Firebase Firestore** — Quiz scores, leaderboard, chat logging
-3. **Firebase Anonymous Auth** — Session tracking without login
-4. **Google Cloud Translation** — Hindi, Tamil, Telugu, Bengali support
-5. **Google Cloud Text-to-Speech** — Audio accessibility for rights section
 
 ---
 
@@ -176,19 +144,30 @@ gcloud run deploy votewise-india \
 
 - WCAG 2.1 AA compliant
 - Skip-to-main-content link
-- Keyboard navigable (visible focus rings)
+- Full keyboard navigation with visible focus rings
 - High contrast mode toggle
-- Font size controls (14px / 16px / 20px)
-- ARIA live regions for dynamic content
-- TTS buttons for screen reader support
-- Tested with axe-core in Playwright
+- Font size controls (small / medium / large)
+- ARIA live regions for all dynamic content
+- TTS buttons throughout for screen reader support
+- Automated accessibility testing with axe-core + Playwright
+
+---
+
+## 🔒 Security
+
+- **Helmet.js** — HTTP security headers + strict CSP
+- **express-rate-limit** — Per-route rate limiting
+- **Zod** — Server-side input validation on all API routes
+- **DOMPurify** — Client-side XSS protection
+- **Firebase Anonymous Auth** — No PII collected
+- **No secrets in frontend** — All API keys server-side only
 
 ---
 
 ## 📄 License
 
-MIT
+MIT — Built with ❤️ for Indian democracy.
 
 ---
 
-_Built with Google Antigravity, Gemini AI, and Firebase._
+*Built with Google Gemini AI, Firebase, and deployed on Vercel.*
